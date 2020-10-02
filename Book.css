@@ -1,0 +1,129 @@
+body {
+  padding: 0px 0px 0px 0px;
+  margin:0px;
+  z-index: 0; 
+}
+.Navbar {
+background-color: #4E5E95;
+display: flex;
+padding: 16px;
+font-family: gotham medium;
+
+height:50px;
+margin:0px;
+}
+.Navbar__Link-brand{
+font-family: brush script mt;
+font-size: 2em;
+text-shadow: #202638;
+color: rgb(66, 252, 196);
+}
+
+.Navbar__Link {
+padding-right: 8px;
+}
+
+.Navbar__Items {
+display: flex;
+}
+
+.Navbar__Items--right {
+margin-left:auto;
+}
+
+.Navbar__Link-toggle {
+display: none;
+}
+.Navbar__Link a{
+  color: white;
+  text-decoration: none;
+}
+.Navbar__Link a:hover,a:active{
+color:rgb(66, 252, 196);
+cursor:pointer;
+}
+
+@media only screen and (max-width: 768px) {
+.Navbar__Items,
+.Navbar {
+  flex-direction: column;
+}
+  
+.Navbar__Items {
+  display:none;
+}
+  
+.Navbar__Items--right {
+  margin-left:0;
+}
+  
+.Navbar__ToggleShow {
+  display: flex;
+}
+  
+.Navbar__Link-toggle {
+  align-self: flex-end;
+  display: initial;
+  position: absolute;
+  cursor: pointer;
+ } 
+}
+div.Roomlist{
+
+}
+.room{
+  margin-top:50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display:flex;
+}
+.left .right{
+    width:50%;
+    height: 50%;
+}
+.right-text{
+float:right;
+}
+.left-text{
+float:left;
+}
+.roomname{
+color:black;
+font-weight: bold;
+}
+.roomdetails{
+  font-family: nobel,sans-serif;
+    color: rgba(68, 44, 44, 0.678);
+}
+.logos{
+  margin-top:40px;
+  
+}
+.logos i {
+  background-color: rgba(236, 234, 234, 0.61);
+  border-radius: 50%;
+  border: 1px solid rgb(107, 106, 106);
+  padding: 10px;
+  box-shadow: 0px 0px 2px #888;
+  margin-left:3px;
+  margin-right:3px;
+}
+.logos i:hover {
+  transform: scale(1.2);
+    box-shadow:  20px 15px 
+@media only screen and (max-width: 768px) 
+{
+.left .right{
+    width:100%;
+    float: none;
+    display: block;
+}
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(59, 235, 182);
+  color: #4E5E95;
+  text-align: center;
+}

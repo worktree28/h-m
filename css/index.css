@@ -1,13 +1,21 @@
 body {
     padding: 0px 0px 0px 0px;
+    margin:0px;
     z-index: 0; 
 }
 .Navbar {
   background-color: #4E5E95;
   display: flex;
   padding: 16px;
-  font-family: sans-serif;
-  color: white;
+  font-family: gotham medium;
+ 
+}
+.Navbar__Link-brand{
+font-family: brush script mt;
+font-size: 2em;
+padding-bottom:30px;
+text-shadow: #202638;
+color: rgb(66, 252, 196);
 }
 
 .Navbar__Link {
@@ -24,6 +32,14 @@ body {
 
 .Navbar__Link-toggle {
   display: none;
+}
+.Navbar__Link a{
+    color: white;
+    text-decoration: none;
+}
+.Navbar__Link a:hover,a:active{
+  color:rgb(66, 252, 196);
+  cursor:pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -121,23 +137,19 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-@media only screen and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
 
-}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(59, 235, 182);
+    color: #4E5E95;
+    text-align: center;
+  }
+ .slide2 h2{
+   text-align: center;
+   color:#4E5E95;
+   margin-top: 70px;
 
-@media only screen and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-@media only screen and (min-device-width: 1025px) {
-
-}
+ }
+ 
