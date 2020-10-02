@@ -6,15 +6,14 @@ body {
 .Navbar {
 background-color: #4E5E95;
 display: flex;
-padding: 16px;
+padding: 20px 10px 20px 10px;
 font-family: gotham medium;
 
-height:50px;
-margin:0px;
 }
 .Navbar__Link-brand{
 font-family: brush script mt;
 font-size: 2em;
+padding-bottom:30px;
 text-shadow: #202638;
 color: rgb(66, 252, 196);
 }
@@ -29,6 +28,15 @@ display: flex;
 
 .Navbar__Items--right {
 margin-left:auto;
+}
+
+.right-text{
+  padding-left: 30px;
+
+}
+.left-text{
+  padding-left:10px;
+  padding-right: 30px;
 }
 
 .Navbar__Link-toggle {
@@ -67,10 +75,18 @@ cursor:pointer;
   position: absolute;
   cursor: pointer;
  } 
+ .room{
+   display:block;
+ }
+ .left .right{
+  width:100%;
 }
-div.Roomlist{
+.right-text .left-text{
+  display:block;
 
 }
+}
+
 .room{
   margin-top:50px;
   margin-left: 20px;
@@ -104,21 +120,17 @@ font-weight: bold;
   border-radius: 50%;
   border: 1px solid rgb(107, 106, 106);
   padding: 10px;
-  box-shadow: 0px 0px 2px #888;
+  box-shadow: 0px 0px 2px rgba(136, 136, 136, 0.397);
   margin-left:3px;
   margin-right:3px;
+  margin-bottom: 5px;
 }
 .logos i:hover {
   transform: scale(1.2);
-    box-shadow:  20px 15px 
-@media only screen and (max-width: 768px) 
-{
-.left .right{
-    width:100%;
-    float: none;
-    display: block;
+  box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.603);
 }
-}
+
+
 .footer {
   left: 0;
   bottom: 0;
