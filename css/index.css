@@ -155,3 +155,6 @@ img {vertical-align: middle;}
    margin-top: 70px;
 
  }
+ .footer a{
+  text-decoration: none;
+}
