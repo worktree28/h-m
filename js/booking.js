@@ -33,3 +33,31 @@ window.onclick = function(event) {
   }
 
 }
+var room,adult,children,from,till,diff;
+function check(){
+    room=document.getElementById("room").value;
+    adult=document.getElementById("adults").value;
+    children=document.getElementById("children").value;
+    from=document.getElementById("check-in").value;
+    till=document.getElementById("check-out").value;
+    till = Number(new Date(till));
+    from = Number(new Date(from));
+    till=till/(60*60*24*1000);
+    from=from/(60*60*24*1000);
+    diff=till-from;
+    console.log(room);
+    console.log(adult);
+    console.log(children);
+    console.log(diff);
+}
+
+
+
+//document.getElementById("d1").innerHTML=`
+/*<div>
+    hello
+    
+    <div style="color: pink">
+        wachu doing
+    </div>
+</div>`;*/

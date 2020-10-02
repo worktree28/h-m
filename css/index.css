@@ -3,6 +3,9 @@ body {
     margin:0px;
     z-index: 0; 
 }
+a{
+    text-decoration: none;
+}
 .Navbar {
   background-color: #4E5E95;
   display: flex;

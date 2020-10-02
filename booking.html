@@ -13,8 +13,14 @@
     <section class="booking">
         <div class="container">
             <form action="" class="form">
-                <label for="destination" class="input-label">Destination</label>
-                <input type="text" class="input" id="destination">
+                <label for="room" class="input-label">Room type</label>
+                <select class="options" id="room" required>
+                    <option value="">please select one</option>
+                    <option value="1">hello</option>
+                    <option value="2">hi</option>
+                    <option value="3">option somethingsssss</option>
+                    <option value="4">options something</option>
+                </select>
             </form>
             <form action="" class="form">
                 <label for="check-in" class="input-label">Check in</label>
@@ -28,23 +34,23 @@
                 <label for="adults" class="input-label">Adults</label>
                 <select class="options" id="adults">
                     <option value="0">0</option>
-                    <option value="0">1</option>
-                    <option value="0">2</option>
-                    <option value="0">3</option>
-                    <option value="0">4</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select>
             </form>
             <form action="" class="form">
                 <label for="children" class="input-label">Children</label>
                 <select class="options" id="children">
                     <option value="0">0</option>
-                    <option value="0">1</option>
-                    <option value="0">2</option>
-                    <option value="0">3</option>
-                    <option value="0">4</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select>
             </form>
-            <button class="btn book" onclick="check">Book</button>
+            <button class="btn book" onclick="check()">Book</button>
         </div>
     </section>
     <!-- Trigger/Open The Modal -->
@@ -62,13 +68,15 @@
     <!-- The Modal -->
     <div id="myModal1" class="modal1">
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content" id="d1">
             <span class="close">&times;</span>
-            <p>Some text in the Modal2..</p>
+            <p>some shit</p>
         </div>
     </div>
-    
+    <div style="margin:0;">
+        
 
+        
 <script src="js/booking.js"></script>
 </body>
 </html>
