@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="booking">
+        <div class="container">
+            <form action="" class="form">
+                <label for="destination" class="input-label">Destination</label>
+                <input type="text" class="input" id="destination">
+            </form>
+            <form action="" class="form">
+                <label for="check-in" class="input-label">Check in</label>
+                <input type="date" class="input" id="check-in">
+            </form>
+            <form action="" class="form">
+                <label for="check-out" class="input-label">Check out</label>
+                <input type="date" class="input" id="check-out">
+            </form>
+            <form action="" class="form">
+                <label for="adults" class="input-label">Adults</label>
+                <select class="options" id="adults">
+                    <option value="0">0</option>
+                    <option value="0">1</option>
+                    <option value="0">2</option>
+                    <option value="0">3</option>
+                    <option value="0">4</option>
+                </select>
+            </form>
+            <form action="" class="form">
+                <label for="children" class="input-label">Children</label>
+                <select class="options" id="children">
+                    <option value="0">0</option>
+                    <option value="0">1</option>
+                    <option value="0">2</option>
+                    <option value="0">3</option>
+                    <option value="0">4</option>
+                </select>
+            </form>
+            <button class="btn book" onclick="check">Book</button>
+        </div>
+    </section>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <button id="myBtn1">Open Modal</button>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal1" class="modal1">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal2..</p>
+        </div>
+    </div>
+    
+
+<script src="js/booking.js"></script>
+</body>
+</html>
