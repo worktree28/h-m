@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -79,12 +80,14 @@ cursor:pointer;
   cursor: pointer;
  } 
  .room{
-   display:block;
+  display:unset !important;
+  display:block;
  }
  .left .right{
   width:100%;
 }
 .right-text .left-text{
+  display:unset !important;
   display:block;
 
 }
@@ -106,18 +109,24 @@ cursor:pointer;
 }
 .right-text{
 float:right;
+font-family: martel sans;
 }
 .left-text{
 float:left;
+font-family: martel sans;
+padding-left: 30px;
 }
 .roomname{
 color:black;
 font-weight: bold;
-font-family: nobel,sans-serif;
+font-family: martel sans;
+padding-top: 40px;
+padding-bottom: 20px ;
 }
 .roomdetails{
-  font-family: nobel,sans-serif;
     color: rgba(68, 44, 44, 0.678);
+    font-family: martel sans;
+    font-size: 1.2em;
 }
 .logos{
   margin-top:40px;
@@ -149,6 +158,8 @@ font-family: nobel,sans-serif;
 }
 .footer a{
   text-decoration: none;
+  text-emphasis: none;
+  color: #4E5E95;
 }
 * {
   box-sizing: border-box;
@@ -193,4 +204,15 @@ font-family: nobel,sans-serif;
 .dropdown {
   position: relative;
   display: inline-block;
+}
+button{
+  font-size: large;
+  margin-top: 40px;
+  color:whitesmoke;
+  align-items: center;
+  background-color: #394b88;
+  border-radius: 4px;
+}
+button:hover{
+  cursor: pointer;
 }

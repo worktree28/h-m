@@ -170,6 +170,7 @@ img {vertical-align: middle;}
     background-color:rgb(59, 235, 182);
     color: #4E5E95;
     text-align: center;
+    margin-top: 0px;
   }
  .slide2 h2{
    text-align: center;
@@ -207,13 +208,15 @@ font-size: large;
    color:whitesmoke;
    align-items: center;
    background-color: #394b88;
+   border-radius: 4px;
  }
  button:hover{
    cursor: pointer;
  }
  .slide3{
   background-image: linear-gradient(to right, #4a5d99b0 ,rgba(112, 250, 209, 0.781));
-  height:500px;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
  }
  #slide3head{
   text-align: center;
@@ -236,3 +239,177 @@ font-size: large;
   text-emphasis: none;
   color: #4E5E95;
 }
+body
+{
+  background-color:#f2f2f2;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.property-card{
+  margin-left:50px;
+  margin-right:50px;
+}
+.cards{
+  display:flex;
+  margin: 30px;
+  justify-content: center;
+}
+
+h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+p
+{
+  font-size:12px;
+}
+
+.center
+{
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+}
+#first{
+  background-image:url('https://www.south-african-lodges.com/media/one-nature-nyaruswiga-serengeti-16.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+#second{
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDJh2AwU5KOZ5GVXIHmTnHELG8daVIH2S--w&usqp=CAU');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+#third{
+  background-image:url('https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1463043845/Domestic%20Hotels/Hotels_Coorg/Club%20Mahindra%20Virajpet%20Coorg/Funzone_2.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+#fourth{
+  background-image:url('https://img.freepik.com/free-photo/spa-arrangement-with-towel-soap-salt_23-2148268482.jpg?size=626&ext=jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+/* Social Icons */
+
+.property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}
+
+
+/* Optional
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+
+*/
