@@ -22,11 +22,25 @@
              </div>
            </nav>
            </div>
-         
+           <div class="dropdown">
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+            
+            <ul id="myUL">
+              <li><a href="#pt1">SOMETHING1</a></li>
+              <li><a href="#pt2">SOMETHING2</a></li>
+            
+              <li><a href="#pt3">SOMETHING3</a></li>
+              <li><a href="#pt4">SOMEHTING4</a></li>
+            
+              <!--<li><a href="#">Calvin</a></li>
+              <li><a href="#">Christina</a></li>
+              <li><a href="#">Cindy</a></li>-->
+            </ul>
+        </div>
          
         <div class = "Roomlist">
         
-        <div class="room fade-on-scroll" style=" box-shadow: 50px;   background-color: rgba(107, 104, 104, 0.623);">
+        <div class="room fade-on-scroll" id="pt1" style=" box-shadow: 50px;   background-color: rgba(107, 104, 104, 0.623);">
             <div class="left">
                 <img src="https://i.pinimg.com/originals/f6/ef/00/f6ef005d5fde0e555cd6731018112497.jpg" >
             </div>
@@ -49,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="room fade-on-scroll" style="background-color: rgba(248, 252, 248, 0.705);">
+        <div class="room fade-on-scroll" id="pt2" style="background-color: rgba(248, 252, 248, 0.705);">
               <span class = "left-text">
                 <h2 class="roomname">Deluxe Room</h2>
                 <p class="roomdetails">A room with a kitchenette, a private pool and a spacious balcony with a minibar</p>
@@ -73,7 +87,7 @@
             </span>
           
         </div>
-        <div class="room fade-on-scroll" style=" box-shadow: 50px;   background-color: rgba(21, 88, 43, 0.753);">
+        <div class="room fade-on-scroll" id="pt3" style=" box-shadow: 50px;   background-color: rgba(21, 88, 43, 0.753);">
             <span class="left">
                 <img src="https://i.pinimg.com/originals/f6/ef/00/f6ef005d5fde0e555cd6731018112497.jpg" >
             </span>
@@ -96,7 +110,7 @@
                 </div>
             </span>
         </div>
-        <div class="room fade-on-scroll" style="background-color: rgba(248, 252, 248, 0.705);">
+        <div class="room fade-on-scroll" id="pt4" style="background-color: rgba(248, 252, 248, 0.705);">
             <span class = "left-text">
               <h2 class="roomname">Standard Room</h2>
               <p class="roomdetails">A room with a kitchenette, a private pool and a spacious balcony with a minibar</p>
@@ -141,4 +155,5 @@
         </div>
       
     </body>
+    <script src="Book.js"></script>
 </html>
