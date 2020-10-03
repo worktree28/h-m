@@ -53,7 +53,7 @@
 
 <h2>My Phonebook</h2>
 <div class="dropdown">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
   <li><a href="#">Adele</a></li>
@@ -69,7 +69,7 @@
 </div>
 <p> hello</p>
 <script>
-function myFunction() {
+function search() {
     document.getElementById("myUL").style.display = "block";
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
