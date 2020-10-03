@@ -25,7 +25,7 @@
 
 }
 #myUL{
-    visibility: hidden;
+    display: none;
 }
 #myUL li a {
   border: 1px solid #ddd;
@@ -60,10 +60,10 @@
   <li><a href="#">Christina</a></li>
   <li><a href="#">Cindy</a></li>
 </ul>
-
+<p> hello</p>
 <script>
 function myFunction() {
-    document.getElementById("myUL").style.visibility = "visible";
+    document.getElementById("myUL").style.display = "block";
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
