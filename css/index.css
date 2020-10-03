@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans&display=swap');
 body {
-  background-color: #bebebe;
+  background-color: white;
     padding: 0px 0px 0px 0px;
     margin:0px;
     z-index: 0; 
@@ -96,20 +97,22 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1100px;
   position: relative;
-  top: 100px;
   margin: auto;
   z-index: -2;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #f0eeee;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
+  display:block;
+  background-color:rgb(71, 71, 71);
+  
 }
 
 /* Number text (1/3 etc) */
@@ -170,9 +173,36 @@ img {vertical-align: middle;}
   }
  .slide2 h2{
    text-align: center;
-   color:#4E5E95;
-   margin-top: 70px;
+   color:#4e5e95dc;
+   padding-top: 80px;
+   padding-bottom: 20px;
+   font-family: martel sans;
+   font-size: 2.5em;
+ }
+ .slide2{
+  background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/videoblocks-white-abstract-smooth-flowing-waves-motion-background-seamless-looping-video-animation-ultra-hd-4k-3840x2160_bhojmw9a8_thumbnail-180_01.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   padding-right: 30px;
+padding-left: 50px;
+   text-align: center;
+   height:500px;
+   font-family: martel sans;
 
+ }
+ #subhead{
+  color: #4e5e95cb;
+  font-size: 1.5em;
+  padding-bottom:20px;
+ }
+ .slide2 p{
+color:#5769a5e7 ;
+font-size: large;
+
+ }
+ .slide3{
+   background-image: url("https://images.assetsdelivery.com/compings_v2/axynia/axynia1708/axynia170800029.jpg");
+   
  }
  .footer a{
   text-decoration: none;
