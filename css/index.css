@@ -5,6 +5,9 @@ body {
     margin:0px;
     z-index: 0; 
 }
+html{
+  scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
@@ -36,6 +39,7 @@ font-family: brush script mt;
 font-size: 2em;
 text-shadow: #202638;
 color: rgb(66, 252, 196);
+margin-right: auto;
 }
 
 .Navbar__Link {
@@ -64,6 +68,9 @@ color: rgb(66, 252, 196);
 }
 
 @media only screen and (max-width: 768px) {
+  .Navbar__Link-brand{
+    margin-left: 10px;
+  }
   .Navbar__Items,
   .Navbar {
     flex-direction: column;
@@ -71,24 +78,29 @@ color: rgb(66, 252, 196);
     
 .Navbar__Items {
     display:none;
+    margin-right: 30px;
   }
     
 .Navbar__Items--right {
     margin-left:0;
+
   }
     
 .Navbar__ToggleShow {
     display: flex;
+        margin-right: 30px;
+
   }
     
 .Navbar__Link-toggle {
-    align-self: flex-end;
+    /*align-self: flex-end;*/
     display: initial;
+    margin-left: auto;
+    right: 25px;
     position: absolute;
     cursor: pointer;
    } 
 }
-* {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -246,8 +258,7 @@ body
   -webkit-font-smoothing: antialiased;
 }
 
-*
-{
+*{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }

@@ -11,11 +11,15 @@
 </head>
 <body>
     <section class="booking">
-        <div class="container">
+        <div class="cntainer">
+            <form action="" class="form">
+                <label for="name" class="input-label">Name</label>
+                <input type="name" class="input" id="name">
+            </form>
             <form action="" class="form">
                 <label for="room" class="input-label">Room type</label>
                 <select class="options" id="room" required>
-                    <option value="">please select one</option>
+                    <option value="0" style="color: rgb(182, 182, 182);" disabled selected>please select one</option>
                     <option value="1">hello</option>
                     <option value="2">hi</option>
                     <option value="3">option somethingsssss</option>
@@ -49,34 +53,155 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-            </form>
-            <button class="btn book" onclick="check()">Book</button>
+            </form>            
         </div>
     </section>
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
+    <button id="myBtn">Book</button>
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
+            <h1>Select optional addons</h3>
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-            <button id="myBtn1">Open Modal</button>
+            <label class="contain">Starry nights
+            <input id="s1" type="checkbox" >
+            <span class="checkmark"></span>
+            </label>
+            <label class="contain">Space Walk
+            <input type="checkbox" id="s2">
+            <span class="checkmark"></span>
+            </label>
+            <label class="contain">Buffet
+            <input type="checkbox" id="s3">
+            <span class="checkmark"></span>
+            </label>
+            <label class="contain">Spa
+            <input type="checkbox" id="s4">
+            <span class="checkmark"></span>
+            </label>
+            <hr/>
+            <button id="myBtn1">Continue</button>
         </div>
     </div>
     <!-- The Modal -->
     <div id="myModal1" class="modal1">
         <!-- Modal content -->
-        <div class="modal-content" id="d1">
+        <div class="modal-content" >
             <span class="close">&times;</span>
-            <p>some shit</p>
+            <div id="d1"></div>
         </div>
     </div>
-    <div style="margin:0;">
+    <div style="margin:0;" id="d2">
         
-
-        
+        <!--<div class="invoice-box">
+            <table cellpadding="0" cellspacing="0">
+                <tr class="top">
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    Earthern Nights
+                                </td>
+                                
+                                <td>
+                                    Invoice #: 123<br>
+                                    Created: January 1, 2015
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr class="information">
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <td>
+                                    Earthern nights<br>
+                                    31 Greta Lane<br>
+                                    Martian Colony - 4
+                                </td>
+                                
+                                <td>
+                                    John Doe<br>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr class="heading">
+                    <td>
+                        Payment Method
+                    </td>
+                    
+                    <td>
+                        Online
+                    </td>
+                </tr>
+                
+                <tr class="details">
+                    <td>
+                        Ref. ID
+                    </td>
+                    
+                    <td>
+                        1000
+                    </td>
+                </tr>
+                
+                <tr class="heading">
+                    <td>
+                        Item
+                    </td>
+                    
+                    <td>
+                        Price
+                    </td>
+                </tr>
+                
+                <tr class="item">
+                    <td>
+                        Website design
+                    </td>
+                    
+                    <td>
+                        $300.00
+                    </td>
+                </tr>
+                
+                <tr class="item">
+                    <td>
+                        Hosting (3 months)
+                    </td>
+                    
+                    <td>
+                        $75.00
+                    </td>
+                </tr>
+                
+                <tr class="item last">
+                    <td>
+                        Domain name (1 year)
+                    </td>
+                    
+                    <td>
+                        $10.00
+                    </td>
+                </tr>
+                
+                <tr class="total">
+                    <td></td>
+                    
+                    <td>
+                       Total: $385.00
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>-->
 <script src="js/booking.js"></script>
 </body>
 </html>
