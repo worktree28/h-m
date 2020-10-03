@@ -22,7 +22,8 @@ a{
   transition: 1s;
 }
 .harsh-cont{
-  max-width: 1050px;
+  padding-right: 5%;
+  padding-left: 5%;
   width: 100%;
   margin:auto;
   display: flex;
@@ -70,7 +71,7 @@ margin-right: auto;
 
 @media only screen and (max-width: 768px) {
   .Navbar__Link-brand{
-    margin-left: 10px;
+    margin-left: -5px;
   }
   .Navbar__Items,
   .Navbar {
@@ -198,7 +199,8 @@ img {vertical-align: middle;}
  .slide2{
   background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/videoblocks-white-abstract-smooth-flowing-waves-motion-background-seamless-looping-video-animation-ultra-hd-4k-3840x2160_bhojmw9a8_thumbnail-180_01.jpg");
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
+   background-position: center center;
    padding-right: 30px;
     padding-left: 50px;
    text-align: center;
