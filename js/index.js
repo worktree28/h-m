@@ -4,7 +4,7 @@ function classToggle() {
     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
   }
   
-  document.querySelector('.Navbar__Link-toggle')
+document.querySelector('.Navbar__Link-toggle')
     .addEventListener('click', classToggle);
   var slideIndex = 0;
   showSlides();
@@ -23,5 +23,17 @@ function classToggle() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
   }
+  var myNav = document.getElementById('mynav');
+  window.onscroll = function () { 
+      "use strict";
+      if(document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+          myNav.classList.add("nav-colored");
+          myNav.classList.remove("nav-transparent");
+      } 
+      else {
+          myNav.classList.add("nav-transparent");
+          myNav.classList.remove("nav-colored");
+      }
+  };
