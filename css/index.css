@@ -184,10 +184,10 @@ img {vertical-align: middle;}
    background-repeat: no-repeat;
    background-size: contain;
    padding-right: 30px;
-padding-left: 50px;
+    padding-left: 50px;
    text-align: center;
-   height:500px;
    font-family: martel sans;
+   padding-bottom: 130px;
 
  }
  #subhead{
@@ -199,10 +199,37 @@ padding-left: 50px;
 color:#5769a5e7 ;
 font-size: large;
 
+
+ }
+ button{
+   font-size: large;
+   margin-top: 20px;
+   color:whitesmoke;
+   align-items: center;
+   background-color: #394b88;
+ }
+ button:hover{
+   cursor: pointer;
  }
  .slide3{
-   background-image: url("https://images.assetsdelivery.com/compings_v2/axynia/axynia1708/axynia170800029.jpg");
-   
+  background-image: linear-gradient(to right, #4a5d99b0 ,rgba(112, 250, 209, 0.781));
+  height:500px;
+ }
+ #slide3head{
+  text-align: center;
+  color:#3e4d80ec;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-family: martel sans;
+  font-size: 2.5em;
+ }
+ #left1, #left2{
+   color:rgba(6, 83, 6, 0.795);
+   float:left;
+ }
+ #right1,#right2{
+  color:rgba(6, 83, 6, 0.795);
+   float:right;
  }
  .footer a{
   text-decoration: none;
