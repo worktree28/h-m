@@ -2,6 +2,8 @@
 html {
   scroll-behavior: smooth;
 }
+body {background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAFfKj/FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF4OXp8PX50NXZBLxR6QAAAEhJREFUeNpiYGJgYGACCCAGMAAIIDiDCSCAGLAAgABCEcbBBAggGIORQhogwNCcwIjddKgQI6ojUbkgWSYMo+BCjKiOR9PLBAAchAAxHFDBbwAAAABJRU5ErkJggg==')}
+
 body {
   padding: 0px 0px 0px 0px;
   margin:0px;
@@ -553,11 +555,13 @@ vertical-align: top;
       display: block;
       text-align: center;
   }
-.slide1 h2{
+}
+
+.roomhead h2{
   text-align: center;
-   color:#4e5e95dc;
-   padding-top: 80px;
-   padding-bottom: 10px;
-   font-family: martel sans;
-   font-size: 2em;
+  color:#4e5e95dc;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  font-family: martel sans;
+  font-size: 2em;
 }
