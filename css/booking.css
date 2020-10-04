@@ -10,7 +10,9 @@ body {
 .cntainer{
     justify-content: center;
     display: flex;
-    width: 100%;
+    width: auto;
+    flex-direction: column;
+    max-width: 1000px;
 }
 .input-group{
     margin: 1rem;
@@ -29,6 +31,8 @@ body {
   min-height: 3rem;
     margin: 10px 10px;
     color: #aaa;
+    width: 98%;
+    align-content: center;
 }
 #myBtn{
 
