@@ -35,15 +35,96 @@
              </div>
            </nav>
            </div>
-
+           
+    
         <div class="container">
 	
         <div class= "slide1">
-            <h2>What are you waiting for?</h2>
-            <a href="index.html"><div class="panel pink">
-                <button>BOOK NOW</button>
-              </div>
-              </a>
+            <section class="booking">
+                <div class="cntainer" style="">
+                    <form action="" class="form">
+                        <label for="name" class="input-label">Name</label>
+                        <input type="name" class="input" id="name">
+                    </form>
+                    <form action="" class="form">
+                        <label for="room" class="input-label">Room type</label>
+                        <select class="options" id="room" required>
+                            <option value="0" style="color: rgb(182, 182, 182);" disabled selected>please select one</option>
+                            <option value="2.5" style="color: black;">Mini Suite</option>
+                            <option value="2" style="color: black;">Deluxe Room with a Lake View</option>
+                            <option value="2" style="color: black;">Deluxe Room with a Forest View</option>
+                            <option value="1.5" style="color: black;">Standard Room</option>
+                        </select>
+                    </form>
+                    <form action="" class="form">
+                        <label for="check-in" class="input-label">Check in</label>
+                        <input type="date" class="input" id="check-in">
+                    </form>
+                    <form action="" class="form">
+                        <label for="check-out" class="input-label">Check out</label>
+                        <input type="date" class="input" id="check-out">
+                    </form>
+                    <form action="" class="form">
+                        <label for="adults" class="input-label">Adults</label>
+                        <select class="options" id="adults">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </form>
+                    <form action="" class="form">
+                        <label for="children" class="input-label">Children</label>
+                        <select class="options" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </form>            
+                </div>
+            </section>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn panel pink">Book</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+        
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h1>Select optional addons</h3>
+                    <span class="close">&times;</span>
+                    <label class="contain">Starry nights
+                    <input id="s1" type="checkbox" >
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="contain">Space Walk
+                    <input type="checkbox" id="s2">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="contain">Buffet
+                    <input type="checkbox" id="s3">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="contain">Spa
+                    <input type="checkbox" id="s4">
+                    <span class="checkmark"></span>
+                    </label>
+                    <hr/>
+                    <button id="myBtn1">Continue</button>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal1" class="modal1">
+                <!-- Modal content -->
+                <div class="modal-content" >
+                    <span class="close">&times;</span>
+                    <div id="d1"></div>
+                </div>
+            </div>
+            <div style="margin:0;" id="d2">
+            </div>
         </div>    
          
         <div class = "Roomlist">
@@ -174,4 +255,5 @@
       
     </body>
     <script src="Book.js"></script>
+    <script src="js/booking.js"></script>
 </html>
