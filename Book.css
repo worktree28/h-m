@@ -142,6 +142,7 @@ padding-bottom: 20px ;
   margin-left:3px;
   margin-right:3px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .logos i:hover {
   transform: scale(1.2);
