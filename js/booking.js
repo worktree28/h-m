@@ -1,4 +1,5 @@
 // Get the modal
+var modal2= document.getElementById("notModal");
 var modal = document.getElementById("myModal");
 var modal1 = document.getElementById("myModal1")
 // Get the button that opens the modal
@@ -177,9 +178,10 @@ span1.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal || event.target == modal1) {
+  if (event.target == modal || event.target == modal1 || event.target == modal2) {
     modal.style.display = "none";
     modal1.style.display = "none";
+    modal2.style.display="none";
   }
 
 }
