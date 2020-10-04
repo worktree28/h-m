@@ -5,6 +5,9 @@ body {
     margin:0px;
     z-index: 0; 
 }
+html{
+  scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
@@ -19,7 +22,8 @@ a{
   transition: 1s;
 }
 .harsh-cont{
-  max-width: 1050px;
+  padding-right: 5%;
+  padding-left: 5%;
   width: 100%;
   margin:auto;
   display: flex;
@@ -27,6 +31,7 @@ a{
   z-index: 6;
 }
 .nav-colored { background-color:rgba(78, 94, 149, 1);}
+.nav-transparent {background-color:rgba(78, 94, 149, 0.3);}
 .Navbar__Link-brand{
   text-shadow: -2px 2px 0 #000,
                           2px 2px 0 #000,
@@ -36,11 +41,12 @@ font-family: brush script mt;
 font-size: 2em;
 text-shadow: #202638;
 color: rgb(66, 252, 196);
+margin-right: auto;
 }
 
 .Navbar__Link {
   padding-right: 8px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .Navbar__Items {
@@ -64,6 +70,9 @@ color: rgb(66, 252, 196);
 }
 
 @media only screen and (max-width: 768px) {
+  .Navbar__Link-brand{
+    margin-left: -5px;
+  }
   .Navbar__Items,
   .Navbar {
     flex-direction: column;
@@ -71,34 +80,41 @@ color: rgb(66, 252, 196);
     
 .Navbar__Items {
     display:none;
+    margin-right: 30px;
   }
     
 .Navbar__Items--right {
     margin-left:0;
+
   }
     
 .Navbar__ToggleShow {
     display: flex;
+        margin-right: 30px;
+
   }
     
 .Navbar__Link-toggle {
-    align-self: flex-end;
+    /*align-self: flex-end;*/
     display: initial;
+    margin-left: auto;
+    right: 25px;
     position: absolute;
     cursor: pointer;
    } 
 }
-* {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1100px;
+  max-height: 100vh;
   position: relative;
   margin: auto;
   z-index: -2;
+  overflow:  hidden  ;
+  padding-bottom: 10vh;
 }
 
 /* Caption text */
@@ -170,7 +186,6 @@ img {vertical-align: middle;}
      margin: 50px;
     justify-content: center;
     
-  left: 20%;
    }
 }
 /* On smaller screens, decrease text size */
@@ -202,6 +217,7 @@ img {vertical-align: middle;}
   background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/videoblocks-white-abstract-smooth-flowing-waves-motion-background-seamless-looping-video-animation-ultra-hd-4k-3840x2160_bhojmw9a8_thumbnail-180_01.jpg");
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center center; 
    padding-right: 30px;
     padding-left: 50px;
    text-align: center;
@@ -264,8 +280,7 @@ body
   -webkit-font-smoothing: antialiased;
 }
 
-*
-{
+*{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -274,7 +289,7 @@ body
   margin-right:50px;
 }
 .cards{
-  display:flex;
+  display: flex;
   margin: 30px;
   justify-content: center;
 }
@@ -308,7 +323,7 @@ p
   width:16em;
   display:-webkit-box;
   display:-ms-flexbox;
-  display:flex;
+  display: flex;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
   -ms-flex-direction:column;
@@ -320,9 +335,26 @@ p
   border-radius:16px;
   overflow:hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-wrap: wrap;
+  min-width: auto;
+  padding-bottom: 20px;
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
+@media only screen and (max-width: 768px){
+  .cards
+  { margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: block;
+    flex: 0 1 calc(50% - 1em);
+    flex:0 0 100%
+  }
+  .property-card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+  }
+}
 /* Top Half of card, image. */
 
 .property-image
