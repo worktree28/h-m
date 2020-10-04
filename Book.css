@@ -218,12 +218,11 @@ padding-bottom: 20px ;
 }
 
 
-@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
 
-* {box-sizing:border-box}
-h1 {text-align:center;font-family:comfortaa;font-weight:900;font-size:3em;color:#fff;text-shadow:0em 0.05em 0 rgba(0,0,0,0.35)}
+
+* {box-sizing:border-box;}
 button {color:#454545;background:transparent;border-width:2px;border-style: solid;border-color: #454545;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
-font-family:comfortaa;font-weight:bold}
+font-family:martel sans;font-weight:bold}
 button:before, button:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
 button:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
 button:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
@@ -251,7 +250,6 @@ box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
   border-color:#353535;
   cursor: pointer;
 }
-.blue .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
 
 .slide1{
   background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/videoblocks-white-abstract-smooth-flowing-waves-motion-background-seamless-looping-video-animation-ultra-hd-4k-3840x2160_bhojmw9a8_thumbnail-180_01.jpg");
@@ -267,8 +265,21 @@ box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
 .pink button:before, .pink button:after  {border-color:rgb(59, 235, 182)}
 .pink button:hover:before, .pink button:hover:after {border-color:rgb(59, 235, 182);}
 .pink button:hover {color:#4E5E95;background-color:rgb(59, 235, 182);border-color:rgb(59, 235, 182);}
-.pink .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+.pink .panel {
+  max-width:960px;
+  text-align:center;
+  position:relative;
+  margin:auto;
+}
 
 button{
   margin: 40px;
+}
+.slide1 h2{
+  text-align: center;
+   color:#4e5e95dc;
+   padding-top: 80px;
+   padding-bottom: 10px;
+   font-family: martel sans;
+   font-size: 2em;
 }
