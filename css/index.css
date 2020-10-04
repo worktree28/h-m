@@ -13,7 +13,7 @@ a{
 }
 .Navbar {
   /*background-color:rgba(78, 94, 149, 0.31);*/
-  background-color:rgba(78, 94, 149, 1);
+  background-color:rgba(78, 94, 149, 0.3);
   display: flex;
   margin: auto;
   position:fixed;top:0;right:0;left:0;z-index:5;
