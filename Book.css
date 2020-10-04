@@ -275,7 +275,6 @@ box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
 button{
   margin: 40px;
 }
-<<<<<<< HEAD
 
 
 .cntainer{
@@ -550,7 +549,6 @@ vertical-align: top;
       display: block;
       text-align: center;
   }
-=======
 .slide1 h2{
   text-align: center;
    color:#4e5e95dc;
@@ -558,5 +556,4 @@ vertical-align: top;
    padding-bottom: 10px;
    font-family: martel sans;
    font-size: 2em;
->>>>>>> 3723b860f5dceb93cfd2d5dffd3084979100d5d3
 }
