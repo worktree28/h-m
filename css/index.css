@@ -46,7 +46,7 @@ margin-right: auto;
 
 .Navbar__Link {
   padding-right: 8px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .Navbar__Items {
@@ -272,7 +272,7 @@ body
   margin-right:50px;
 }
 .cards{
-  display:flex;
+  display: flex;
   margin: 30px;
   justify-content: center;
 }
@@ -306,7 +306,7 @@ p
   width:14em;
   display:-webkit-box;
   display:-ms-flexbox;
-  display:flex;
+  display: flex;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
   -ms-flex-direction:column;
@@ -318,9 +318,26 @@ p
   border-radius:16px;
   overflow:hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-wrap: wrap;
+  min-width: auto;
+  padding-bottom: 20px;
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
+@media only screen and (max-width: 768px){
+  .cards
+  { margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: block;
+    flex: 0 1 calc(50% - 1em);
+    flex:0 0 100%
+  }
+  .property-card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+  }
+}
 /* Top Half of card, image. */
 
 .property-image
